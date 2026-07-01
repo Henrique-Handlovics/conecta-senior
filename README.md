@@ -1,16 +1,43 @@
-# React + Vite
+🧓 Conecta Senior
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma plataforma desenvolvida para promover a inclusão digital de pessoas idosas, oferecendo conteúdos educativos sobre o uso seguro e eficiente da tecnologia no dia a dia.
 
-Currently, two official plugins are available:
+🔗 Acesse o projeto: https://conecta-senior.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<hr>
 
-## React Compiler
+📖 Sobre o projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O Conecta Senior é um projeto de extensão universitária desenvolvido na Universidade Santa Cecília (UNISANTA), com foco na promoção da inclusão digital e no fortalecimento da cidadania entre pessoas idosas.
 
-## Expanding the ESLint configuration
+A iniciativa foi criada para aproximar a tecnologia do público da terceira idade por meio de uma plataforma acessível, intuitiva e de fácil navegação, oferecendo orientações sobre o uso de ferramentas digitais presentes no cotidiano, como aplicativos de mensagens, navegação na internet e práticas de segurança digital.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O resultado é uma plataforma educativa que busca reduzir a exclusão digital, incentivar o uso consciente da tecnologia e tornar o acesso à informação mais simples, seguro e acessível para a população idosa.
+
+<hr>
+
+✨ Funcionalidades
+📱 Interface simples e intuitiva
+💬 Orientações sobre o uso do WhatsApp
+🔒 Dicas de segurança digital
+🌐 Explicações sobre navegação na internet
+⚠️ Informações para identificar golpes virtuais
+📲 Layout totalmente responsivo
+
+<hr>
+
+🛠️ Tecnologias utilizadas
+HTML5
+CSS3
+JavaScript
+React
+Vite
+React Icons
+
+<hr>
+
+👨‍💻 Autor
+
+Desenvolvido por Henrique Handlovics.
+
+GitHub: https://github.com/Henrique-Handlovics
