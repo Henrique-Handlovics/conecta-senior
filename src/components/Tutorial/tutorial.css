@@ -1,0 +1,565 @@
+.tutoriais-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tutoriais-container h2{
+    font-size: 44px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tutoriais-container p{
+   font-size: 28px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tutorial-grid{
+    max-width: 1200px;
+
+    margin: 60px auto;
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap: 30px;
+}
+
+.tutorial-card{
+
+    background: #fff;
+
+    padding: 32px;
+
+    border-radius: 24px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    transition: .3s;
+}
+
+.tutorial-card:hover{
+
+    transform: translateY(-10px);
+
+}
+
+.tutorial-icon{
+
+    font-size: 4rem;
+
+}
+
+.tutorial-card h3{
+
+    color: #1F2937;
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+}
+
+.tutorial-card p{
+
+    color: #6B7280;
+
+    line-height: 1.7;
+
+}
+
+.tutorial-card button{
+
+    margin-top: auto;
+
+    border: none;
+
+    background: #2563EB;
+
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.tutorial-card button:hover{
+
+    background: #1D4ED8;
+
+}
+
+.overlay{
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+    rgba(0,0,0,.4);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1000;
+
+}
+
+.modal{
+
+    width: 600px;
+
+    max-width: 90%;
+
+    background: white;
+
+    border-radius: 30px;
+
+    padding: 40px;
+
+    position: relative;
+
+}
+
+.close-btn{
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 20px;
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    background: #F3F4F6;
+
+}
+
+.modal h2{
+
+    color: #1F2937;
+
+    margin-bottom: 30px;
+
+    font-size: 2rem;
+
+}
+
+.progress-container{
+
+    width: 100%;
+
+    height: 12px;
+
+    background: #E5E7EB;
+
+    border-radius: 50px;
+
+    overflow: hidden;
+
+    margin-bottom: 40px;
+
+}
+
+.progress-bar{
+
+    height: 100%;
+
+    background: #22C55E;
+
+    transition: .4s;
+
+}
+
+.tutorial-step{
+
+    display: flex;
+
+    gap: 20px;
+
+    align-items: center;
+
+    margin-bottom: 40px;
+
+}
+
+.tutorial-step span{
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    background: #2563EB;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 1.4rem;
+
+    font-weight: bold;
+
+}
+
+.tutorial-step p{
+
+    color: #4B5563;
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+}
+
+.buttons{
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+.buttons button{
+
+    border: none;
+
+    background: #2563EB;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+
+    transition: .3s;
+
+}
+
+.buttons button:hover{
+
+    background: #1D4ED8;
+
+}
+
+.buttons button:disabled{
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+/* ==========================
+        Notebook
+========================== */
+
+@media (max-width:1024px){
+
+    .tutoriais-container{
+
+        padding:60px 35px;
+
+    }
+
+    .tutoriais-container h2{
+
+        font-size:2.5rem;
+
+    }
+
+    .tutoriais-container p{
+
+        font-size:1.3rem;
+
+    }
+
+    .tutorial-grid{
+
+        margin:50px auto;
+
+        gap:25px;
+
+    }
+
+}
+
+
+/* ==========================
+          Tablet
+========================== */
+
+@media (max-width:768px){
+
+    .tutoriais-container{
+
+        padding:50px 25px;
+
+    }
+
+    .tutoriais-container h2{
+
+        font-size:2.1rem;
+
+    }
+
+    .tutoriais-container p{
+
+        font-size:1.1rem;
+
+        margin-bottom:20px;
+
+    }
+
+    .tutorial-grid{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+        margin:40px auto;
+
+    }
+
+    .tutorial-card{
+
+        padding:28px;
+
+    }
+
+    .tutorial-icon{
+
+        font-size:3.5rem;
+
+    }
+
+    .tutorial-card h3{
+
+        font-size:1.4rem;
+
+    }
+
+    .modal{
+
+        width:95%;
+
+        max-height:90vh;
+
+        overflow-y:auto;
+
+        padding:35px 25px;
+
+    }
+
+}
+
+
+/* ==========================
+          Mobile
+========================== */
+
+@media (max-width:480px){
+
+    .tutoriais-container{
+
+        padding:40px 18px;
+
+    }
+
+    .tutoriais-container h2{
+
+        font-size:1.8rem;
+
+        margin-top:20px;
+
+    }
+
+    .tutoriais-container p{
+
+        font-size:1rem;
+
+        margin-bottom:20px;
+
+    }
+
+    .tutorial-grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+        margin:30px auto;
+
+    }
+
+    .tutorial-card{
+
+        padding:24px;
+
+        border-radius:20px;
+
+    }
+
+    .tutorial-icon{
+
+        font-size:3rem;
+
+    }
+
+    .tutorial-card h3{
+
+        font-size:1.3rem;
+
+    }
+
+    .tutorial-card p{
+
+        font-size:.95rem;
+
+        line-height:1.6;
+
+    }
+
+    .tutorial-card button{
+
+        width:100%;
+
+        padding:16px;
+
+    }
+
+    /* ---------- Modal ---------- */
+
+    .overlay{
+
+        align-items:flex-start;
+
+        overflow-y:auto;
+
+        padding:20px 10px;
+
+    }
+
+    .modal{
+
+        width:100%;
+
+        max-height:90vh;
+
+        overflow-y:auto;
+
+        padding:30px 20px;
+
+        border-radius:20px;
+
+    }
+
+    .modal h2{
+
+        font-size:1.5rem;
+
+        padding-right:35px;
+
+    }
+
+    .close-btn{
+
+        width:40px;
+
+        height:40px;
+
+        top:15px;
+
+        right:15px;
+
+    }
+
+    .tutorial-step{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        text-align:center;
+
+        gap:15px;
+
+    }
+
+    .tutorial-step span{
+
+        width:50px;
+
+        height:50px;
+
+        font-size:1.2rem;
+
+    }
+
+    .tutorial-step p{
+
+        font-size:1rem;
+
+        line-height:1.7;
+
+    }
+
+    .buttons{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .buttons button{
+
+        width:100%;
+
+        padding:16px;
+
+    }
+
+}
